@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example</title>
+</head>
+
+<body>
+
+    <h1>Sign Up for Exapmle</h1>
+    <form>
+        <label for="fname">First Last name*: </label>
+        <input type="text" id="fname" name="fname" required></input> <input type="text" required id="lname" name="lname"
+            required></input>
+        </br>
+        </br>
+        <label for="org">Organzation: </label>
+        <input type="text" id="org" name="org">
+        </br>
+        </br>
+        <label for="email">Email Address*: </label>
+        <input type="email" id="email" name="email" required>
+        </br>
+        </br>
+
+        <label for="wph">Work Phone: </label>
+        <input type="tel" id="wph" name="wph">
+        </br>
+        </br>
+        <label for="hph">Home Phone</label>
+        <input type="tel" id="hph" name="hph">
+        </br>
+        </br>
+        <label for="cph">Cell phone </label>
+        <input type="tel" id="cph" name="cph">
+        </br>
+        </br>
+        <label for="fax">Fax: </label>
+        <input type="tel" id="fax" name="fax">
+        </br>
+        </br>
+        <label for="Address1">Address 1*: </label>
+        <input type="text" id="address1" name="address1" required>
+        </br>
+        </br>
+        <label for="Adress2">Address 2: </label>
+        <input type="text" id="address2" name="address2">
+        </br>
+        </br>
+        <label for="City">City *: </label>
+        <input type="text" id="city" name="city" required>
+        </br>
+        </br>
+        <label for="state">State Provience: </label>
+        <input type="text" id="state" name="state">
+        </br>
+        </br>
+        <label for="zip">Zip Postal Code: </label>
+        <input type="text" id="zip" name="zip">
+        </br>
+        </br>
+        <label for="country">Country *: </label>
+        <input type="text" id="country" name="country">
+        </br>
+        </br>
+        <p1>* Required Fileds</p1> <button onclick="printText()">submit</button>
+        </br>
+        <h3 id="print"></h3>
+
+    </form>
+    <script>
+        function printText() {
+            var firstName = document.getElementById("fname").value;
+            var lastName = document.getElementById("lname").value;
+            var printElement = document.getElementById("print");
+            printElement.innerText = "Congratulations " + firstName + " " + lastName + ", you are now signed up";
+        }
+    </script>
+</body>
+
+</html>
